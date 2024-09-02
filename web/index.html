@@ -14,17 +14,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
         <br/>
 
-        <div>Select Your File</div>
-        <input type="file" id="file1"/>
+        <form action="Uploading" method="post" enctype="multipart/form-data">
+            <input type="email" name="email" required>
+            <input type="file" name="file" required>
+            <button onclick="uploadFile()" type="submit">Upload</button>
+        </form>
 
         <br/><br/>
 
-        <div>Email Address</div>
-        <input type="text" id="email"/>
 
-        <br/><br/>
 
-        <button onclick="uploadFile();">Upload</button>
+
 
         <a href="Downloading">Download</a>
 
